@@ -487,3 +487,73 @@ footer {
 .post-form button[type="button"]:hover{
   background-color: #bbb;
 }
+
+/* forum */
+.forum-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.forum-container h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.forum-container p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-box {
+  display: flex;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.search-box button {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popular-container {
+  display: flex;
+  align-items: center;
+  margin: 20px auto; /* Điều chỉnh khoảng cách theo ý muốn */
+  width: fit-content; /* Hoặc một chiều rộng cố định */
+}
+
+.popular-title {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.popular-items {
+  display: flex; /* Các mục nằm ngang hàng nhau */
+}
+
+.popular-item {
+  padding: 5px 10px;
+  border: 2px solid black; /* Điều chỉnh độ dày và màu viền theo ý muốn */
+  border-radius: 50px;
+  background-color: #eee; /* Điều chỉnh màu nền theo ý muốn */
+  color: #333; /* Điều chỉnh màu chữ theo ý muốn */
+  text-decoration: none;
+  margin-right: 5px;
+}
