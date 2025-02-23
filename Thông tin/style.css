@@ -386,3 +386,22 @@ footer {
     font-size: 25px;
   }
 }
+
+.sidebar{
+  position: fixed;
+  width: 50px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #111;
+}
+
+.sidebar a{
+  display: block;
+  padding: 10px, 20px;
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial;
+  letter-spacing: 2px;
+
+}
