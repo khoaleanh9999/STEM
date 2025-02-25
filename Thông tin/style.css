@@ -175,7 +175,7 @@ header ul li a:hover {
   width: 250px;
   background-color: #c3c4c7;
   color: white;
-  height: 100vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   transition: width 0.3s ease;
