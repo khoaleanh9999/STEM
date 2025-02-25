@@ -160,6 +160,83 @@ header ul li a:hover {
   }
 }
 
+/* container */
+.container {
+  display: grid; /* Kích hoạt grid */
+  grid-template-columns: 250px 1fr; /* Định nghĩa 2 cột: 250px cho sidebar, 1fr cho phần còn lại */
+}
+
+.content {
+  grid-column: 2; /* Đặt nội dung vào cột thứ 2 */
+}
+
+/* sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #c3c4c7;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+.sidebar-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  padding: 10px; /* Thêm padding để có khoảng trống xung quanh nội dung */
+}
+
+.sidebar-item a:hover {
+  background-color: #646669; /* Màu nền khi hover */
+  border-radius: 8px; /* Bo góc khi hover */
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.sidebar-item.active {
+  border-radius: 8px; /* Bo góc active item */
+}
+
+.icon-wrapper {
+  width: 25px;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center; /* Căn giữa icon */
+}
+
+.sidebar-item img {
+  width: 100%; /* Icon chiếm toàn bộ icon-wrapper */
+  display: block;
+}
+
+.sidebar-item span {
+  white-space: nowrap;
+  font-size: 16px;
+  color: white;
+}
+
+.sidebar.collapsed .sidebar-item span {
+  display: none;
+}
+
 /* Tìm kiếm */
 .search {
   width: 100%;
@@ -190,6 +267,7 @@ header ul li a:hover {
 
 .blog h2 {
   font-size: 30px;
+  margin-left: 40px;
 }
 
 .grid-blog {
@@ -200,7 +278,7 @@ header ul li a:hover {
 .row-blog {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -0.5%;
+  margin-left: 40px;  
   margin-right: -0.5%;
 }
 
@@ -327,7 +405,6 @@ footer {
   background-color: black;
   color: white;
   padding: 20px;
-  margin-top: 20px;
 }
 
 .footer-container {
@@ -385,32 +462,4 @@ footer {
   .nav_pc-link a {
     font-size: 25px;
   }
-}
-
-.sidebar{
-  width: 250px;
-  background-color: #f4f4f4;
-  padding: 20px;
-  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar ul{
-  list-style-type: none;
-  padding: 0;
-}
-
-.sidebar ul li{
-  margin: 15px, 0;
-}
-
-.sidebar ul li a{
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-}
-
-.sidebar ul li a:hover{
-  color: #007bff;
-  text-decoration: underline;
-  transition: color 0.3s ease;
 }
